@@ -7,9 +7,7 @@
     <title>Owl VPN</title>
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
-      crossorigin="anonymous"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,9 +35,11 @@
   <body>
     <!-- header -->
     <nav class="navbar navbar-light navbar-expand-md">
-      <div class="container flex-nowrap flex-xl-wrap">
+      <div class="container-fluid container-md">
         <a href="/" class="navbar-brand">
           <img class="logo" src="./images/logo.png" alt="logo" />
+          <!-- <i class="fas fa-blog"></i> &nbsp;
+        Blog Template -->
         </a>
 
         <button
@@ -86,7 +86,7 @@
             <h1>VPN Owl</h1>
             <h3>
               <strong>Unlimited</strong> VPN <br />
-              <strong>Fats & Secure</strong>
+              <strong>Fast & Secure</strong>
             </h3>
           </div>
           <div class="col-12 col-md-6 d-flex justify-content-center mt-5">
@@ -114,7 +114,7 @@
             <div
               class="col-12 col-md-6 d-flex flex-column justify-content-center"
             >
-              <h3>About us.</h3>
+              <h3>About us</h3>
               <p class="mt-4">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim
                 amet at quod fugit officia a in quos voluptatum consequuntur
@@ -132,8 +132,8 @@
             <div
               class="col-12 col-md-6 mt-lg-5 d-flex flex-column justify-content-center"
             >
-              <h3>Lorem ipsum.</h3>
-              <p class="mr-5 mt-4">
+              <h3>Lorem ipsum</h3>
+              <p class="mr-md-5 mt-4">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim
                 amet at quod fugit officia a in quos voluptatum consequuntur
                 minima error nisi aut, minus id illo laboriosam necessitatibus,
@@ -165,7 +165,7 @@
             <div
               class="col-12 col-md-6 d-flex flex-column justify-content-center"
             >
-              <h3>Lorem ipsum.</h3>
+              <h3>Lorem ipsum</h3>
               <p class="mt-4">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim
                 amet at quod fugit officia a in quos voluptatum consequuntur
@@ -285,8 +285,10 @@
         <section id="contact" class="mt-5 pb-5">
           <div class="container">
             <div class="row">
-              <div class="col-md-8 d-flex flex-column justify-content-center pl-xl-5">
-                <h3>Contact us.</h3>
+              <div
+                class="col-md-8 d-flex flex-column justify-content-center pl-xl-5"
+              >
+                <h3>Contact us</h3>
                 <p class="mt-4">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim
                   amet at quod fugit officia a in quos voluptatum consequuntur
@@ -343,8 +345,8 @@
                 </div>
                 <ul>
                   <li><a href="#">Home</a></li>
-                  <li><a href="#">about</a></li>
-                  <li><a href="#">Fwatures</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Features</a></li>
                   <li><a href="#">Gallery</a></li>
                   <li><a href="#">Testimonials</a></li>
                   <li><a href="#">Contact</a></li>
@@ -395,6 +397,16 @@
         </div>
       </div>
     </footer>
+
+    <!-- modal -->
+
+    <div id="modal" class="popup">
+      <button id="close"><i class="fa-solid fa-xmark"></i></button>
+      <h4 class="text-center p-4">Welcome to VPN Owl</h4>
+      <p id="greeting" class="text-center"></p>
+    </div>
+
+    <!-- floating menu -->
     <script src="script.js"></script>
   </body>
 </html>
