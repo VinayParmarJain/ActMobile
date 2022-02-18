@@ -269,14 +269,14 @@ ul {
 }
 
 #modal {
-  min-width: 50vw;
-  min-height: 30vh;
+  min-width: 25vw;
+  min-height: 15vh;
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
   top: 50%;
   border-radius: 15px;
-  background: white;
+  background: #252027;
 }
 
 #modal button {
@@ -284,20 +284,34 @@ ul {
   margin: 10px 15px 0px auto;
   background-color: transparent;
   font-size: 20px;
-  color: black;
+  color: #fec10f;
   border: none;
   outline: none;
   cursor: pointer;
 }
 
 #modal p {
-  font-size: 1.4rem;
-  background: #252027;
-  padding: 1rem;
-  margin: auto;
+  font-size: 1.5rem;
   color: white;
-  border-radius: 15px;
-  width: 50%;
+  padding: 2rem;
+}
+
+input#hex{
+  background: #fec10f;
+  min-height: 7vh;
+  min-width: 13vw !important;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  outline: none;
+  border-top-left-radius: 15px !important;
+  border-top-right-radius: 15px;
+  color: black;
+  padding: 10px;
+}
+
+input#hex::placeholder {
+  color:#4a4a4a;
 }
 
 @media only screen and (max-width: 992px) {
@@ -401,10 +415,6 @@ ul {
     margin-bottom: 5rem;
   }
 
-  a.navbar-brand {
-    text-align: left;
-  }
-
   .logo {
     width: 15%;
   }
@@ -412,18 +422,21 @@ ul {
   .carousel .testimonial {
     padding: 30px 10 10px;
   }
+
+  #modal p {
+    font-size: 1rem;
+    color: white;
+    padding: 2rem;
+  }
 }
 
-@media only screen and (max-width: 576) {
-  .carousel .carousel-control {
-    display: none;
+@media only screen and (max-width: 576px) {
+  .carousel-control {
+    display: none !important;
   }
 
   .carousel-line {
     width: 250px;
   }
 
-  .navbar-light .navbar-brand {
-    width: 50%;
-  }
 }
