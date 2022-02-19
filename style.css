@@ -296,7 +296,7 @@ ul {
   padding: 2rem;
 }
 
-input#hex{
+input#hex {
   background: #fec10f;
   min-height: 7vh;
   min-width: 13vw !important;
@@ -311,7 +311,7 @@ input#hex{
 }
 
 input#hex::placeholder {
-  color:#4a4a4a;
+  color: #4a4a4a;
 }
 
 @media only screen and (max-width: 992px) {
@@ -426,7 +426,7 @@ input#hex::placeholder {
   #modal p {
     font-size: 1rem;
     color: white;
-    padding: 2rem;
+    padding: 1rem;
   }
 }
 
@@ -438,5 +438,4 @@ input#hex::placeholder {
   .carousel-line {
     width: 250px;
   }
-
 }
